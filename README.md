@@ -7,18 +7,20 @@
 ## 方案介绍
 ![](https://raw.githubusercontent.com/Mateogic/FRP/main/Images/frp.png)
 ## 实现过程
-1. #### 使用ESP32-cam开发板将摄像头ov2640拍摄画面以mjpeg格式传输至内网某IP的80端口，完成该操作即可通过**内网**访问查看拍摄画面。
+1. 使用ESP32-cam开发板将摄像头ov2640拍摄画面以mjpeg格式传输至内网某IP的80端口，完成该操作即可通过**内网**访问查看拍摄画面。
 
   ![](https://raw.githubusercontent.com/Mateogic/FRP/main/Images/1.png)
   ![](https://raw.githubusercontent.com/Mateogic/FRP/main/Images/1.1.png)
 
-2. #### 配置FRPS服务器(腾讯云)
+2. 配置FRPS服务器(腾讯云)
 
   ![](https://raw.githubusercontent.com/Mateogic/FRP/main/Images/2.png)
-3. #### 配置FRPC客户端(中转设备)
+
+3. 配置FRPC客户端(中转设备)
 
   ![](https://raw.githubusercontent.com/Mateogic/FRP/main/Images/3.png)
-4. #### 通过FRP内网穿透建立内网上述某IP的80端口与公网IP设定的7081端口映射，完成上述操作即可通过外网访问查看拍摄画面。
+  
+4. 通过FRP内网穿透建立内网上述某IP的80端口与公网IP设定的7081端口映射，完成上述操作即可通过外网访问查看拍摄画面。
 
   ![](https://raw.githubusercontent.com/Mateogic/FRP/main/Images/4.png)
   ![](https://raw.githubusercontent.com/Mateogic/FRP/main/Images/4.1.png)
